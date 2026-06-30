@@ -37,7 +37,7 @@ The project follows these main steps:
 
 | Task / Area | Responsible person |
 |---|---|
-| Concept and Implementation in VHDL and FPGA, Hardware realization and setup, Design Schematic and PCB Layout, Documentation | Md Mostafizur Rahman |
+| Concept and Implementation in VHDL and FPGA, Hardware realization and setup, Design Schemati, Netlisting and PCB Layout, Documentation | Md Mostafizur Rahman |
 | Testbench | Deepak Kapil |
 | Documentation, Netlisting Schematic, PCB layout, Gerber, BOM  | Turja Barua |
 
