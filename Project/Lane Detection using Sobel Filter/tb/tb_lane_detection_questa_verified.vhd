@@ -65,11 +65,11 @@ begin
     begin
         -- Mode 0: original image
         sw0 <= '0';
-        wait for 8 ms;
+        wait for 20 ms;
 
         -- Mode 1: Sobel edge image
         sw0 <= '1';
-        wait for 18 ms;
+        wait for 20 ms;
 
         assert hsync_changed
             report "Top test FAILED: Hsync did not toggle."

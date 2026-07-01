@@ -78,8 +78,12 @@ Only one switch is used:
 | `SW0 = 1` | Show Sobel edge image |
 
 ---
+## Block Diagram
 
-## Simple System Explanation
+![Lane Detection using Sobel Filter_VHDL](Lane_Detection_using_Sobel_Filter_VHDL.png)
+
+---
+## System Explanation
 
 The VGA display module creates the current screen positions `x` and `y`. The image ROM gives one road-image pixel for that position. The Sobel filter module detects edges from the pixel stream. The `SW0` switch selects whether the VGA monitor shows the original road image or the Sobel edge-detection result.
 
