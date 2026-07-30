@@ -37,7 +37,7 @@ The project follows these main steps:
 
 | Task / Area | Responsible person |
 |---|---|
-| Concept and Implementation in VHDL and FPGA, Hardware realization and setup, Design Schematic, Netlisting and PCB Layout, Documentation | Md Mostafizur Rahman |
+| Concept and Implementation in VHDL and FPGA, Hardware realization and setup, Design Schematic, Netlisting and PCB Layout,Routing Documentation | Md Mostafizur Rahman |
 | Testbench | Deepak Kapil |
 | Documentation, Netlisting Schematic, PCB layout, Gerber, BOM  | Turja Barua |
 
@@ -65,6 +65,14 @@ Use this top entity in Vivado:
 ```text
 Lane_Detection_using_Sobel_Filter_top
 ```
+
+---
+# FPGA Hardware
+
+- Digilent Nexys A7 (XC7A100T-CSG324)
+- 100 MHz System Clock
+- VGA Monitor
+- SW0 Slide Switch
 
 ---
 
@@ -98,6 +106,19 @@ The VGA display module creates the current screen positions `x` and `y`. The ima
 | `image_rom_160x120.vhd` | Stores the grayscale road image inside FPGA ROM |
 | `Sobel_Filter_3x3.vhd` | Performs Sobel edge detection using a 3x3 pixel window |
 | `Implemented_in_Artix7_100T.xdc` | Maps the VHDL ports to Nexys A7 / Artix-7 FPGA pins |
+
+---
+
+# Image Resolution Comparison
+
+Two FPGA implementations were developed.
+
+| Version | ROM Resolution | VGA Output |
+|----------|---------------|------------|
+| Version 1 | 160 × 120 | 640 × 480 |
+| Version 2 | 320 × 240 | 640 × 480 |
+
+The upgraded implementation stores four times more pixels while maintaining the same VGA output resolution. This significantly improves edge quality and lane visibility.
 
 ---
 
