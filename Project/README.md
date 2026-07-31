@@ -39,7 +39,7 @@ The project follows these main steps:
 |---|---|
 | Concept and Implementation in VHDL and FPGA, Hardware realization and setup, Design Schematic, Netlisting and PCB Layout, PCB Routing, Documentation | Md Mostafizur Rahman |
 | Testbench | Deepak Kapil |
-| Documentation, Netlisting Schematic, PCB layout, Gerber, BOM  | Turja Barua |
+| Netlisting Schematic, PCB layout, Gerber, BOM  | Turja Barua |
 
 ---
 
